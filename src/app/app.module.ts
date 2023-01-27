@@ -9,6 +9,7 @@ import {RouterModule} from "@angular/router";
 import {AppRoutingModule} from "./app-routing.module";
 import {HttpClientModule} from "@angular/common/http";
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { UpdatePersonaComponent } from './update-persona/update-persona.component';
 
 
 
@@ -18,7 +19,8 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     AppComponent,
     PersonaListComponent,
     DettagliPersonaComponent,
-    CreaPersonaComponent
+    CreaPersonaComponent,
+    UpdatePersonaComponent
 
   ],
   imports: [

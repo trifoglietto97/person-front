@@ -28,4 +28,9 @@ export class PersonaServiceService {
   getPersona(id: number): Observable<any> {
     return this.http.get(`${this.url}/${id}`);
   }
+
+  updatePersona(id: number, value: any): Observable<Object> {
+    return this.http.put(`${this.url}/${id}`, value);
+  }
+
 }
