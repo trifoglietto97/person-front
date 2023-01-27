@@ -1,0 +1,28 @@
+<div  class="panel panel-primary">
+  <div  class="panel-heading">
+    <h2>Lista Persone</h2>
+  </div>
+  <div class="panel-body main">
+    <table class="table table table-striped">
+      <thead>
+      <tr>
+        <th>First-name</th>
+        <th>Last-name</th>
+        <th>Email-Id</th>
+        <th>Actions </th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr *ngFor="let persona of persona | async">
+        <td>{{persona.nome}}</td>
+        <td>{{persona.cognome}}</td>
+        <td>{{persona.email}}</td>
+        <td>
+          <button (click)="deletePersona(persona.id)" class="btn btn-danger btn-delete">Delete</button>
+          <button (click)="dettagliPersona(persona.id)" class="btn btn-info btn-detail" style="margin-left: 10px">Details</button>
+      </td>
+      </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

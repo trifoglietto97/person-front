@@ -1,0 +1,18 @@
+<h2>Persona Details</h2>
+
+<hr/>
+<div *ngIf="persona">
+  <div>
+    <label><b>First Name: </b></label> {{persona.nome}}
+  </div>
+  <div>
+    <label><b>Last Name: </b></label> {{persona.cognome}}
+  </div>
+  <div>
+    <label><b>Email Id: </b></label> {{persona.email}}
+  </div>
+</div>
+
+<br>
+<br>
+<button (click)="persona_list()" class="btn btn-primary">Back to Persona List</button><br>
